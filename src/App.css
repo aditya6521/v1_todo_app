@@ -6,4 +6,8 @@ body{
 .App {
   text-align: center;
 }
+.input{
+  max-width: 800px;
+  width: 50vw;
+}
 
