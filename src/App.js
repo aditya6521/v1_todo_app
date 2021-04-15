@@ -11,6 +11,7 @@ import {
   db
 } from "./firebase_config";
 import firebase from "firebase";
+import todoListItem from './todo';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -51,7 +52,7 @@ function App() {
     <
     div className = "App" >
     <
-    h1 > My Todo App < /h1> <
+    h1 > My Todo App </h1> <
     TextField className = "input"
     id = "outlined-basic"
     label = "Enter To-DO "
@@ -70,20 +71,24 @@ function App() {
     onClick = {
       addTodo
     } >
-    Default <
-    /Button> 
+    Default 
+    </Button> 
     
     {todos.map((todo)=>(
-      <p>{todo.todo}</p>
+      //<p>{todo.todo}</p>
+      <todoListItem
+      todo={todo.todo}
+      inprogress={todo.inprogress}
+      id={todo.id}
+    />
 
-    )
-      )}
+    ))}
     
     <
     div >
-    testing <
-    /div> < /
-    div >
+    testing 
+    </div> 
+    </div>
   );
 }
 
