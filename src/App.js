@@ -1,6 +1,6 @@
 import './App.css';
 import TextField from '@material-ui/core/TextField';
-import {useState} from "react";
+import {useState , useEffect} from "react";
 import {Button} from '@material-ui/core';
 import {db} from "./firebase_config";
 import firebase from "firebase";
@@ -8,6 +8,17 @@ import firebase from "firebase";
 function App() {
 
  const [todoInput, setTodoInput] = useState("");
+
+useEffect(() => {
+ getTodo();
+}, [ ])
+
+function getTodo(){
+db.
+}
+
+
+
 
  function addTodo(){
   console.log("your todo input  " );
@@ -17,7 +28,6 @@ function App() {
     todo:todoInput,
   });
   setTodoInput("");
-
 }
 
   return (
