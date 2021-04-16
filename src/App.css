@@ -8,6 +8,14 @@ body{
 }
 .input{
   max-width: 800px;
-  width: 50vw;
+  width: 60vw;
+  padding: 1rem;
+}
+.List{
+  max-width: 50vw;
+
+}
+.MuiListItem-root{
+  margin:auto;
 }
 

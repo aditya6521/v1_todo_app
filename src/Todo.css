@@ -1,0 +1,10 @@
+.List{
+    max-width: 50vw;
+  
+  }
+  .MuiListItem-root{
+    margin:auto;
+  }
+.Ol{
+    list-style: none;
+}

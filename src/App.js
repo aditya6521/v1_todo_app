@@ -11,7 +11,7 @@ import {
   db
 } from "./firebase_config";
 import firebase from "firebase";
-import todoListItem from './todo';
+import TodoListItem from "./Todo";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -20,6 +20,16 @@ function App() {
   useEffect(() => {
     getTodo();
   }, [])
+
+  /*function toggleInprogress(){
+    db.collection("todo_app").doc(todo.id).update({
+      inprogess:!inprogress
+    })
+  }
+
+  function deleteTodo() {
+    db.collection("todo_app").doc(todo.id).delete();
+  }*/
 
   function getTodo() {
     db.collection("todo_app").onSnapshot(function (querySnapshot) {
@@ -71,19 +81,21 @@ function App() {
     onClick = {
       addTodo
     } >
-    Default 
+    Add 
     </Button> 
-    
-    {todos.map((todo)=>(
-      <p>{todo.todo}</p>
-    
 
-    ))}
-    
-    <
-    div >
+    {
+      todos.map((todo) => ( 
+      
+        <TodoListItem todo={todo.todo} inprogress={todo.inprogress} id={todo.id} />
+
+
+      ))
+    }
+
+    <div >
     testing 
-    </div> 
+    </div>  
     </div>
   );
 }

@@ -13,3 +13,19 @@ ReactDOM.render(
 
 
 
+/*
+onChange={function toggleInprogress(){
+    db.collection("todo_app").doc(todo.id).update(todo.inprogress({
+      inprogess:!inprogress
+    }))
+  }}
+
+
+  <ListItem className="List">
+          <ListItemText primary={todo.todo} secondary={todo.inprogress ? "Inprogress":"completed"} />
+          <Button>{todo.inprogress ? "Donee":"Undone"}</Button>
+          <Button onChange={()=>{
+            db.collection("todo.app").doc(todo.id).delete();
+          }}>X</Button>
+        </ListItem>
+  */
