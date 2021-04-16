@@ -94,11 +94,8 @@ function App() {
 
       ))
     }  
-    <div>
-      testing
     </div>
-    </div>
-  );
+  ); 
 }
 
 export default App;

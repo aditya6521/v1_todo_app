@@ -1,12 +1,10 @@
 .List{
     max-width: 40vw;
-    margin-top: 10rem;
-    padding: 2rem 2rem;
-    padding-top: 2rem;
+    min-width: 40vw;
     
   }
   .MuiListItem-root{
-    margin:auto;
+    min-width: 70vw;
   }
 .Ol{
     list-style: none;
