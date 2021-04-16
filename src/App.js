@@ -76,13 +76,15 @@ function App() {
       }
     }
     variant = "outlined" / >
-    <
-    Button variant = "contained"
+    <div className="Add">
+      <
+    Button className="AddButton" variant = "contained"
     onClick = {
       addTodo
     } >
     Add 
     </Button> 
+    </div>
 
     {
       todos.map((todo) => ( 
@@ -91,11 +93,7 @@ function App() {
 
 
       ))
-    }
-
-    <div >
-    testing 
-    </div>  
+    }  
     </div>
   );
 }

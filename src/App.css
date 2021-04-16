@@ -18,4 +18,9 @@ body{
 .MuiListItem-root{
   margin:auto;
 }
-
+.AddButton{
+  padding:1rem 1rem;
+}
+.Add{
+  margin-top: 1rem;
+}
