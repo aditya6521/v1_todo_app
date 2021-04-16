@@ -75,12 +75,8 @@ function App() {
     </Button> 
     
     {todos.map((todo)=>(
-      //<p>{todo.todo}</p>
-      <todoListItem
-      todo={todo.todo}
-      inprogress={todo.inprogress}
-      id={todo.id}
-    />
+      <p>{todo.todo}</p>
+    
 
     ))}
     
